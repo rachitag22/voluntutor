@@ -1,12 +1,5 @@
 <?php
 
-$url = parse_url(getenv("CLEARDB_DATBASE_URL"));
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$daatabaes = substr($url["path"], 1);
-
-
 return [
 
     /*
@@ -62,7 +55,6 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             //'host' => env('DB_HOST', 'localhost'),
-            'host'  =>  $host,
             'database' => $database,
             'username' => $username,
             'password' => $password,
@@ -80,19 +72,19 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             //'host' => env('DB_HOST', 'localhost'),
-            'host' => parse_url(getenv"DATABASE_URL"))["host"];
-            //'port' => env('DB_PORT', '5432'),
+            'host' => 'ec2-54-235-246-67.compute-1.amazonaws.com';
+            'port' => '5432',
             //'database' => env('DB_DATABASE', 'forge'),
-            'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1)
+            'database' => 'd9v5udb6nhfnbk',
             //'username' => env('DB_USERNAME', 'forge'),
-            'username' => parse_url(getenv("DATABASE_URL"))["user"],
+            'username' => 'ongndvmbvwkttq',
             //'password' => env('DB_PASSWORD', ''),
-            'password' => parse_url(getenv("DATABASE_URL"))["pass"],
+            'password' => 'wYVzbnyCD7OE7M2r2sOA3DrNMM',
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
         ],
-
+:@:/
     ],
 
     /*
