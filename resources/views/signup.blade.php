@@ -15,10 +15,10 @@
       <h3>Sign Up</h3>
       <form action="{{ route('signup') }}" method="post">
         <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-          <input style="width: 25%;" class="form-control" type="text" placeholder="ex. First Name" name="first_name" id="first_name" value="{{ Request::old('first_name') }}">
+          <input style="width: 25%;" class="form-control" type="text" placeholder="First Name" name="first_name" id="first_name" value="{{ Request::old('first_name') }}">
         </div>
         <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-          <input style="width: 25%;" class="form-control" type="text" placeholder="ex. Last Name" name="last_name" id="last_name" value="{{ Request::old('last_name') }}">
+          <input style="width: 25%;" class="form-control" type="text" placeholder="Last Name" name="last_name" id="last_name" value="{{ Request::old('last_name') }}">
         </div>
         <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
           <input style="width: 25%;" class="form-control" type="text" placeholder="Email" name="email" id="email" value="{{ Request::old('email') }}">
